@@ -1,0 +1,128 @@
+﻿#ifndef MAINWIDGET_H
+#define MAINWIDGET_H
+
+#include <QWidget>
+#include "view.h"
+#include "scene.h"
+#include "mydatabase.h"
+#include "stationpoint.h"
+#include "preview.h"
+#include "legend.h"
+#include "compass.h"
+#include "searchline.h"
+QT_BEGIN_NAMESPACE
+class QGraphicsScene;
+class QSplitter;
+QT_END_NAMESPACE
+
+
+class MainWidget : public QWidget
+{
+    Q_OBJECT
+public:
+    MainWidget(QWidget *parent = 0);
+
+	QGraphicsScene *scene;
+
+	View* view;
+
+	HWND pHandle;
+
+    void iniAll(QString PersoninfoPath,QString GxDataPath);
+
+	//画人、闪烁、故障等一切动态信息
+	void drawDynamicInfo(QString xml);
+private:
+    //create Action
+    void createActions();
+    //创建菜单
+    void createMenus();
+
+    void setupMatrix();
+    void populateScene();
+
+    //判断是否连得上数据库
+    bool ConnectDB();
+    //两个数据库的路径
+    QString DB_PersoninfoPath;
+    QString DB_GxDataPath;
+
+    //站的点集合
+    QHash<QString,StationPoint*>pointItems;
+	//人的集合
+	QHash<QString, HumanPoint*>humans;
+
+    QPointF mapToMap(QPointF p);
+    QPointF maptoscene(QPointF p);
+
+    //以前的构架有问题，应该将数据和画图分离！
+    void addItemLine(StationPoint *start, StationPoint *end, LineItem::LineType linetype, QString xb);
+    //加文字
+    void addName(StationPoint *centerItem);
+    //判断是否贴墙
+    int byTheSide(QPointF checkPoint);
+
+
+    //数据库初始化
+    void initData();
+    //初始化roadPath
+    void iniRoadPath();
+    //初始化station
+    void iniStationPoint();
+    //初始化StationLine
+    void iniStationLine();
+    //初始化Name
+    void iniTextName();
+    void iniStationName();
+private:
+    //处理信息的一系列函数
+    //GPS
+    void DoServiceInfoGPSInfo(HumanPoint *human);
+    //故障报警
+    void DoErrorAlarm(QString linename,QString stationname);
+
+	void resizeEvent(QResizeEvent *event);
+private:
+	//指南针和图例
+	Legend *mylegend;
+	Compass *compass;
+	//搜索框
+	searchLine *sl;
+
+    QPainter *painter;
+    QMenu *myItemMenu;
+    //黄线
+    RoadPath *roadPath;
+    StationPoint *item;
+    StationPoint::PointType myItemType;
+    //四个点
+    qreal jmax,jmin,wmax,wmin;
+    QColor myItemColor;
+    QColor myLineColor;
+    MyDataBase *m_pDB;
+
+    //信号机集合
+    QList<SignalMachinePointInfo>smPoints;
+    //铁路的集合
+    QHash<QString,LineItem*>mylines;
+
+    //一个存着所有黄色路线的数据结构
+    QHash<QString,QPolygonF>YelloPaths;
+
+    //点移动到线上面
+    ToLine *toline;
+    //查看点的详细细节
+    QAction *showDetailsAction;
+	//wordlist
+	QStringList wordList;
+public slots:
+    void showDetails();
+	void PreviewLostFocus(PreView *item);
+	void cleanHumanPoint(QString humanName);
+	void showHumanDetails();
+
+	void searchItem();
+	bool eventFilter(QObject *watched, QEvent *event);
+};
+
+#endif // MAINWIDGET_H

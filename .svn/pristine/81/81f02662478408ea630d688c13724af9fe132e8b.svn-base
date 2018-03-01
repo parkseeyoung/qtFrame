@@ -1,0 +1,23 @@
+﻿#include "searchline.h"
+
+
+searchLine::searchLine(QWidget *parent)
+    :QLineEdit(parent)
+{
+    QHBoxLayout *mainLayout = new QHBoxLayout;
+    searchBtn = new QPushButton;
+    searchBtn->setFixedSize(18,18);
+    searchBtn->setCursor(Qt::PointingHandCursor);
+    searchBtn->setToolTip(QString::fromLocal8Bit("搜索"));
+    searchBtn->setStyleSheet("QPushButton{border-image:url(:/frame/img/search-icon.png);"
+                             "background:transparent;cursor:pointer;}");
+    setPlaceholderText(QString::fromLocal8Bit("搜索"));
+    mainLayout->addWidget(searchBtn);
+    mainLayout->addStretch();
+    //mainLayout->setContentsMargins(8,8,8,8);
+    mainLayout->setContentsMargins(8,0,0,0);
+    setTextMargins(13+8+2,0,0,0);
+    setContentsMargins(0,0,0,0);
+    setLayout(mainLayout);
+    setStyleSheet("height:29px;border:1px solid #eaeaea;border-radius:14px;");
+}

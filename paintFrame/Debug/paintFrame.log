@@ -1,0 +1,103 @@
+﻿生成启动时间为 2018/2/23 11:23:35。
+项目“C:\Users\Chen-Liu\Documents\qtFrame\paintFrame\paintFrame.vcxproj”在节点 2 上(Build 个目标)。
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_compass.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_compass.cpp, GeneratedFiles\Release\moc_compass.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_humanpoint.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_humanpoint.cpp, GeneratedFiles\Release\moc_humanpoint.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_legend.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_legend.cpp, GeneratedFiles\Release\moc_legend.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwidget.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_mainwidget.cpp, GeneratedFiles\Release\moc_mainwidget.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_myview.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_myview.cpp, GeneratedFiles\Release\moc_myview.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_paintframe.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_paintframe.cpp, GeneratedFiles\Release\moc_paintframe.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_preview.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_preview.cpp, GeneratedFiles\Release\moc_preview.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_searchline.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_searchline.cpp, GeneratedFiles\Release\moc_searchline.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_stationpoint.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_stationpoint.cpp, GeneratedFiles\Release\moc_stationpoint.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_textitem.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_textitem.cpp, GeneratedFiles\Release\moc_textitem.cpp.
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_view.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_view.cpp, GeneratedFiles\Release\moc_view.cpp.
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.8.0\5.8\msvc2013\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtCore /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtGui /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtSql /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\ActiveQt /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtHelp /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtWidgets /IC:\Qt\Qt5.8.0\5.8\msvc2013\include\QtXml /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QAXSERVER /D QT_HELP_LIB /D QT_WIDGETS_LIB /D QT_XML_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt frame\mainwidget.cpp paintframe.cpp
+  mainwidget.cpp
+  paintframe.cpp
+  正在生成代码...
+Link:
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\\paintFrame.dll" /NOLOGO /LIBPATH:C:\Qt\Qt5.8.0\5.8\msvc2013\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Sqld.lib Qt5AxServerd.lib Qt5AxBased.lib Qt5Helpd.lib Qt5Widgetsd.lib Qt5Xmld.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"paintFrame.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.lib" /MACHINE:X86 /SAFESEH /DLL Debug\paintframe.res
+  Debug\compass.obj
+  Debug\humanpoint.obj
+  Debug\legend.obj
+  Debug\lineitem.obj
+  Debug\mainwidget.obj
+  Debug\mydatabase.obj
+  Debug\myview.obj
+  Debug\myxml.obj
+  Debug\pointitem.obj
+  Debug\polyline.obj
+  Debug\preview.obj
+  Debug\roadpath.obj
+  Debug\scene.obj
+  Debug\searchline.obj
+  Debug\stationpoint.obj
+  Debug\textitem.obj
+  Debug\toline.obj
+  Debug\view.obj
+  Debug\moc_compass.obj
+  Debug\moc_humanpoint.obj
+  Debug\moc_legend.obj
+  Debug\moc_mainwidget.obj
+  Debug\moc_myview.obj
+  Debug\moc_paintframe.obj
+  Debug\moc_preview.obj
+  Debug\moc_searchline.obj
+  Debug\moc_stationpoint.obj
+  Debug\moc_textitem.obj
+  Debug\moc_view.obj
+  Debug\qrc_img.obj
+  Debug\paintframe.obj
+  LINK : 没有找到 C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\\paintFrame.dll 或上一个增量链接没有生成它；正在执行完全链接
+     正在创建库 C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.lib 和对象 C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.exp
+  paintFrame.vcxproj -> C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.dll
+PostBuildEvent:
+  C:\Qt\Qt5.8.0\5.8\msvc2013\bin\idc.exe "C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.dll" /idl "Debug\/paintFrame.idl" -version 1.0.0
+  midl "Debug\/paintFrame.idl" /tlb "Debug\/paintFrame.tlb"
+  C:\Qt\Qt5.8.0\5.8\msvc2013\bin\idc.exe "C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.dll" /tlb "Debug\/paintFrame.tlb"
+  C:\Qt\Qt5.8.0\5.8\msvc2013\bin\idc.exe "C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.dll" /regserver
+  :VCEnd
+  
+  
+  Debug\\paintFrame.idl
+  
+  Microsoft (R) 32b/64b MIDL Compiler Version 8.00.0603 
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  Processing Debug\\paintFrame.idl
+  paintFrame.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files\Windows Kits\8.1\Include\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\msxml.idl
+  msxml.idl
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files\Windows Kits\8.1\Include\um\ocidl.acf
+  ocidl.acf
+  Type library attached to C:\Users\Chen-Liu\Documents\qtFrame\Win32\Debug\paintFrame.dll.
+  Server registered successfully!
+已完成生成项目“C:\Users\Chen-Liu\Documents\qtFrame\paintFrame\paintFrame.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:22.55

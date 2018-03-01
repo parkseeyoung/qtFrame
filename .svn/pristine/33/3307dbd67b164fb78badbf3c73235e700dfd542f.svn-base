@@ -1,0 +1,16 @@
+﻿#ifndef SEARCHLINE_H
+#define SEARCHLINE_H
+
+#include <QLineEdit>
+#include <QHBoxLayout>
+#include <QPushButton>
+
+class searchLine : public QLineEdit
+{
+    Q_OBJECT
+public:
+    searchLine(QWidget *parent = 0);
+    QPushButton *searchBtn;
+};
+
+#endif // SEARCHLINE_H
